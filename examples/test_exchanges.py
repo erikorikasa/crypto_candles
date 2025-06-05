@@ -8,7 +8,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.crypto_candles.exchanges import BinanceExchange, MercadoBitcoinExchange, FoxbitExchange, OKXExchange, NovadaxExchange, BitgetExchange, BybitExchange, MEXCExchange, CryptoComExchange
 
 
-def test_exchange(exchange, exchange_name, symbol="BTC-USDT", timeframe="1d", days=5):
+def test_exchange(exchange, exchange_name, symbol="BTC-USDT", timeframe="1d", days=2):
     """Test a specific exchange."""
     print(f"\nTesting {exchange_name}...")
     print("-" * 80)
@@ -57,15 +57,15 @@ def test_exchange(exchange, exchange_name, symbol="BTC-USDT", timeframe="1d", da
 def main():
     # Initialize exchanges
     exchanges = {
-        "Binance": BinanceExchange(),
-        "Mercado Bitcoin": MercadoBitcoinExchange(),
-        "Foxbit": FoxbitExchange(),
-        "OKX": OKXExchange(),
-        "Novadax": NovadaxExchange(),
+        # "Binance": BinanceExchange(),
+        # "Mercado Bitcoin": MercadoBitcoinExchange(),
+        # "Foxbit": FoxbitExchange(),
+        # "OKX": OKXExchange(),
+        # "Novadax": NovadaxExchange(),
         "Bitget": BitgetExchange(),
-        "Bybit": BybitExchange(),
-        "Mexc": MEXCExchange(),
-        "Crypto.com": CryptoComExchange(),
+        # "Bybit": BybitExchange(),
+        # "Mexc": MEXCExchange(),
+        # "Crypto.com": CryptoComExchange(),
     }
 
     # Test each exchange

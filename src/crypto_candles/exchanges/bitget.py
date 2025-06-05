@@ -26,8 +26,8 @@ class BitgetExchange(BaseExchange):
             "30m": "30m",
             "1h": "1h",
             "4h": "4h",
-            "1d": "1d",
-            "1w": "1w",
+            "1d": "1day",
+            "1w": "1week",
         }
 
     def _make_request(
